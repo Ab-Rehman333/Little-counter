@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h1 id="heading">0</h1>
+            <button id="inc">Increment</button>
+            <button id="reset">Reset</button>
+            <button id="dec">Decrement</button>
+        </div>
+    </div>
+    <script> 
+    let myZero = 0;
+        let heading = document.getElementById("heading")
+        let inc = document.getElementById("inc")
+        let reset = document.getElementById("reset")
+        let dec = document.getElementById("dec")
+
+        inc.addEventListener("click", ()=>{
+            myZero +=1;
+            heading.innerText = myZero;
+
+        })
+        reset.addEventListener("click", ()=>{
+            myZero =0;
+            heading.innerText = myZero;
+
+        })
+        dec.addEventListener("click", ()=>{
+            myZero -=1;
+            heading.innerText = myZero;
+
+        })
+
+    </script>
+    
+</body>
+</html>
